@@ -30,25 +30,24 @@ The model ended up performing worse when I increased the stack levels and bag fo
 ### If you were given more time with this dataset, where do you think you would spend more time?
 I would increase the time the model trains, as well as investigate more into the features (feature engineering). 
 
+What was interesting is that for the feature importance table for the best performing model, hour, month, working day, and year were the most significant factors in predicting the counts. Humidity actually ranked quite high as well (5th) which is quite interesting as it is not as intuitive. I would spend more time on generating feature importance tables and potentially combine or drop features to decrease training time and improve accuracy.
+
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
-|model|hpo1|hpo2|hpo3|score|
-|--|--|--|--|--|
-|initial|?|?|?|?|
-|add_features|?|?|?|?|
-|hpo|?|?|?|?|
+![mytable.png](mytable.png)
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
-TODO: Replace the image below with your own.
+![model_train_score.png](model_train_score.png)
 
-![model_train_score.png](img/model_train_score.png)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
 TODO: Replace the image below with your own.
 
-![model_test_score.png](img/model_test_score.png)
+![model_test_score.png](model_test_score.png)
 
 ## Summary
-TODO: Add your explanation
+The model performed the best with added features and no hyperparameter tuning. The best models were those that were combination of various models, as it is AutoGluon's main offering. 
+
+
 

@@ -42,12 +42,13 @@ What was interesting is that for the feature importance table for the best perfo
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
-TODO: Replace the image below with your own.
 
 ![model_test_score.png](model_test_score.png)
 
 ## Summary
 The model performed the best with added features and no hyperparameter tuning. The best models were those that were combination of various models, as it is AutoGluon's main offering. 
 
+In terms of the individual algorithms, XGBoost performed surprisingly well with a much shorter training period. It had an RMSE that was 0.2 higher than the lowest AutoGluon score. Since XGBoost performs best on tabular data such as this, this is no surprise.
 
+As for the neural network, it performed about the same as the initial AutoGluon model, which means that the default MLP does not perform as well on tabular data as other options. It may be due to overfitting since MLPs are more complex.
 
